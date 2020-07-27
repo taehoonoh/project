@@ -1,0 +1,446 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ----------------css reset---------- */
+/* 
+figure img{
+    width: 100%;
+    position: fixed;
+z-index: -1;
+filter: blur(1px);} */
+
+body{
+    font-family: "Century Gothic";
+    background:rgb(46, 46, 46);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+
+
+/* 메뉴 헤더 */
+header {
+
+    background: rgba(0,0,0,0.4);
+display: inline-block;
+width:12%;
+text-align: center;
+z-index: 10;
+height: 100vh;
+
+}
+header .menuall{
+    padding-top: 123px;
+    padding-bottom: 30px;
+}
+
+/* ABOUT */
+header h1{
+    font-family: "Century Gothic";
+    color: white;
+   font-size: 30px;
+}
+/* TIME */
+header h1 span{
+    font-family: "Brandon Grotesque Bold";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 네비 */
+nav{
+    flex-direction: column;
+    display: flex;
+    padding-top: 40%;
+    
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin-top: 46px;
+}
+
+/* 메뉴 이미지 */
+.ott{
+    padding: 207px 10% 0;
+}
+.ott a {
+    width: 48%;
+}
+.ott img{
+    width: 100%;
+}
+
+/* 메뉴 directed */
+.navText{  padding-top: 20%;
+}
+
+.navText p{color: white;
+font-size: 12px;}
+
+/* 메뉴 하단 이미지 */
+.navText img{
+    width: 90%;
+}
+
+
+.section{
+    width:87%;
+    float: right;
+    padding-top: 80px;
+    /* border: 1px solid white; */
+  
+   
+}
+
+.title{
+    font-family: "Helvetica75";
+    color: white;
+    padding-top: 5vh;
+    padding-right: 47%;
+    padding-left:150px;
+    animation: smile 3s linear;
+    
+}
+
+@keyframes smile{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.title h2{font-size: 70px;
+margin-bottom:50px;}
+
+.title .figImg{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width:1200px;
+margin-right: 10px;
+}
+
+.title figure{
+    position: relative;
+    font-size: 1.4em;
+    cursor: zoom-in;
+    opacity: 0;
+    
+}
+.title figure:nth-of-type(1){
+  
+
+}
+
+.title figure.up{
+  animation: up 2.5s linear;
+  opacity: 1;
+}
+@keyframes up{
+    0%{transform: translateY(100%);
+   }
+    100%{transform: translateY(0%);
+   }
+}
+.title figure img{width:500px;
+    height: 300px;
+    padding-top: 20px;
+   }
+
+
+
+.title figure:nth-of-type(1):after{
+    content: "#Restaurant";
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background: black;
+    top:6%;
+    left:0;
+    opacity: 0.5;
+    
+}
+
+
+.title figure:nth-of-type(2):after{
+    content: "#Subway";
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background: black;
+    top:6%;
+    left:0;
+    opacity: 0.5;
+}
+
+
+.title figure:nth-of-type(3):after{
+    content: "#Party";
+    display: flex;
+  
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background: black;
+    top:6%;
+    left:0;
+    opacity: 0.5;
+}
+
+.title figure:nth-of-type(4):after{
+    content: "#Beach";
+    display: flex;
+  
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background: black;
+    top:6%;
+    left:0;
+    opacity: 0.5;
+}
+
+.title figure:hover::after{
+    opacity: 0;
+}
+
+
+@keyframes up{
+    0%{transform: translateY(50%);
+    opacity: 0;}
+    100%{transform: translateY(0%);
+    opacity: 1;}
+}
+
+
+
+.popup{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+background: rgba(0,0,0,0.8);
+width: 100%;
+height: 100vh;
+color: white;
+display: none;
+}
+.popup.block{
+    display:block;
+}
+
+.popup figure{
+    font-family: "Century Gothic";
+    position: absolute;
+    text-align: center;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    white-space: pre;
+    line-height: 1.3em;
+    font-size: 1.6em;
+    z-index:10;
+    display: none;
+    cursor: zoom-out;
+}
+
+
+.popup figure.block{
+    display:block;
+}
+.popup figure img{width: 800px;
+height: 533px;}
+
+
+@media (min-width: 1281px) {
+
+ 
+    
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+   
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        font-family: "Century Gothic";
+        background:rgb(46, 46, 46);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .title{
+        font-family: "Helvetica75";
+        color: white;
+        padding-top: 5vh;
+        padding-right: 47%;
+        padding-left:110px;
+        animation: smile 3s linear;
+        
+    }
+
+    .title{
+        font-family: "Helvetica75";
+        color: white;
+        
+    }
+
+    .title h2{font-size: 40px;
+        margin-bottom:50px;}
+       
+
+    }

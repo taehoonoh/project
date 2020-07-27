@@ -1,0 +1,418 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ----------------css reset---------- */
+/* 
+figure img{
+    width: 100%;
+    position: fixed;
+z-index: -1;
+filter: blur(1px);} */
+
+body{
+    font-family: "Century Gothic";
+    background:rgb(46, 46, 46);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+
+
+/* 메뉴 헤더 */
+header {
+
+    background: rgba(0,0,0,0.4);
+display: inline-block;
+width:12%;
+height: 100vh;
+text-align: center;
+z-index: 10;
+height: 100vh;
+}
+header .menuall{
+    padding-top: 123px;
+    padding-bottom: 30px;
+}
+
+/* ABOUT */
+header h1{
+    font-family: "Century Gothic";
+    color: white;
+   font-size: 30px;
+   
+}
+/* TIME */
+header h1 span{
+    font-family: "Brandon Grotesque Bold";
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 네비 */
+nav{
+    flex-direction: column;
+    display: flex;
+    padding-top: 40%;
+    
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin-top: 46px;
+}
+
+/* 메뉴 이미지 */
+.ott{
+    padding: 207px 10% 0;
+}
+.ott a {
+    width: 48%;
+}
+.ott img{
+    width: 100%;
+}
+
+/* 메뉴 directed */
+.navText{  padding-top: 20%;
+}
+
+.navText p{color: white;
+font-size: 12px;}
+
+/* 메뉴 하단 이미지 */
+.navText img{
+    width: 90%;
+}
+
+
+
+
+.title{
+    font-family: "Helvetica75";
+    color: white;
+    font-size: 70px;
+    padding-top: 5vh;
+    padding-right: 47%;
+      margin-bottom:50px;
+      animation: smile 3s linear;
+}
+@keyframes smile{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.section{
+    width:80%;
+    height: 80vh;
+    /* border:1px solid white;  */
+    float: right;
+    padding-top: 80px;
+    /* border: 1px solid white; */
+}
+.music_wrapper{
+    display: flex;
+}
+.ost{
+position: relative;
+width: 50%;
+
+}
+.ostAll{
+    width:100%;
+    text-align: center;
+}
+.ost .view{
+    width: 372px;
+    height: 372px;
+    overflow: hidden;
+    margin-left: 25%;
+    
+   
+}
+.ost figure{
+    width:100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    transition: 1s;
+    left:0;
+    
+}
+
+/* .ost {
+    color: white;
+    margin-top:10%;
+font-size: 1.3em;} */
+
+.ost figure img{
+   width:100%;
+   height:100%;
+   opacity: .2;
+   transition:3s;
+    clip-path: circle(48% at 50% 50%);
+   
+}
+
+
+
+
+.ost .button img:nth-of-type(1){top:76%;
+    left:35%;
+cursor: pointer;
+width:3%}
+
+.ost .button img:nth-of-type(2){  
+    
+    margin:0 80px;
+    top:76%;
+    left:38.5%;
+cursor: pointer;
+width:5%;}
+
+
+.ost .button img:nth-of-type(3){top:76%;
+    left:46%;
+cursor: pointer;
+width:3%}
+
+.ost .button>p{
+    color: white;
+    font-size: 1.2em;;
+    margin-top: 5vh;
+    
+}
+
+.songtext{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    white-space: pre;
+    text-align: center;
+
+}
+.songtext p{
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: white;
+    width: 50%;
+    height: 80vh;
+    white-space: pre;
+    background: rgba(9,9,9,0.4);
+    padding: 5px;
+    opacity: 0.3;
+    transition: all 2s;
+    position: absolute;
+    top:-20%;
+    right: 35%;
+  
+    }
+   
+
+    @media (min-width: 375px) and (max-width: 767px) {
+        body{
+            font-family: "Century Gothic";
+            background:rgb(46, 46, 46);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        .title{
+            font-family: "Helvetica75";
+            color: white;
+            padding-top: 5vh;
+            padding-right: 47%;
+            padding-left:110px;
+            animation: smile 3s linear;
+            
+        }
+    
+        .title{
+            font-family: "Helvetica75";
+            color: white;
+            
+        }
+    
+        .title h2{font-size: 40px;
+            margin-bottom:50px;}
+        
+ 
+        
+        .songtext{
+            position: relative;
+            width: 50%;
+            height: 900px;
+            white-space: pre;
+            text-align: center;
+            display: none;
+        }
+        .ost .view {
+            width: 372px;
+            height: 372px;
+            overflow: hidden;
+            margin-left: 0;}
+
+
+        .ost .button>p{
+                color: white;
+                font-size: 1.3em;;
+                margin-top: 5vh;
+                
+            }
+
+            .ost .button img:nth-of-type(1){
+                top:76%;
+                left:35%;
+            cursor: pointer;
+            width:20%}
+            
+            .ost .button img:nth-of-type(2){  
+                
+                top:76%;
+                left:38.5%;
+            cursor: pointer;
+            width:30%;}
+            
+            
+            .ost .button img:nth-of-type(3){
+                top:76%;
+                left:46%;
+            cursor: pointer;
+            width:20%}
+    
+    }
