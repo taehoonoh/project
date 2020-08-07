@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
-/* FontAwesome CDN 4.7 */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* FontAwesome CDN 5.14 */
+@import url('https://use.fontawesome.com/releases/v5.14.0/css/all.css');
 
 /* Reset CSS */
-*{box-sizing: border-box;}
+*{box-sizing: border-box; scroll-behavior: smooth;}
 ul{list-style: none;}
 a{text-decoration: none;}
 
@@ -19,4 +19,66 @@ body{
     font-size: 15px;
     margin: 0;
     height: 100vh;
+    background: #fff;
 }
+
+/* Entire Layout */
+.cd-section {
+    height: 100vh;
+}
+.cd-section > div {
+    height: 100%;
+    position: relative;
+}
+.content {
+    background-color: #ddd;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 80px);
+   left:20px;
+   bottom: 20px;
+   overflow: hidden;
+}
+
+
+/* Header */
+header{position: fixed;
+    top:0;
+    left:0;
+width: 100%;
+transition: 0.5s;
+}
+.gnb-inner{
+    /* border: 1px solid #000; */
+    width: calc(100% - 40px);
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+}
+.logo{float: left;}
+.logo img{padding-top: 19px;}
+.gnb{float: right;}
+
+.menu{display: none;}
+.slogan{
+    font-size: 16px;
+    font-style: italic;
+}
+.trigger{
+    display: none;
+}
+
+/* Hiring Button */
+.btn-hiring{position: fixed; right:50px; bottom:50px;
+    color: #fff; display: block; padding: 10px 20px;
+    background-color: black; border-radius: 20px;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.397);
+transition: .5s;}
+
+.btn-hiring:active{transform: scale(0); }
+
+.btn-hiring .fas{
+    transform: rotateY(180deg);
+margin-right: 5px
+;}
+
