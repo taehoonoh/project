@@ -41,6 +41,9 @@ body{
 }
 
 
+
+
+
 /* Header */
 header{position: fixed;
     top:0;
@@ -75,10 +78,54 @@ transition: 0.5s;
 box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.397);
 transition: .5s;}
 
-.btn-hiring:active{transform: scale(0); }
-
 .btn-hiring .fas{
     transform: rotateY(180deg);
 margin-right: 5px
 ;}
 
+.btn-hiring:active{transform: scale(0); }
+
+
+/*  ################### Section : awards winner ###################*/
+
+.awards-inner{height: 100%;
+border: 1px solid #ddd;}
+.awards-inner > div{
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.about-awards{
+    background-color: #1a1f24;
+    color: #fff;
+}
+.about-heading{position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);text-align: center; width: 70%;}
+
+.victory-jump{background: #fff;}
+.victory-jump img{position: absolute;
+    top:50%;left:50%; transform: translate(-50%,-50%);
+    width: 70%;}
+.about-heading h2{margin: 0;}
+hr.bar{width: 50px; height: 4px;background: crimson; border: none;
+margin: 30px auto; }
+
+.about-heading p{
+    color: #999; 
+    font-size: 16px; 
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+.about-heading a{
+    border: 1px solid #bbb; 
+    border-radius: 20px;
+    color: #bbb;
+padding: 5px 15px; 
+text-transform: uppercase;
+transition: 0.5s;
+
+
+}
+.about-heading a:hover{background: #31c0ce;
+color: #fff; border: transparent}
