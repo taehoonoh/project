@@ -20,7 +20,17 @@ $(function(){
         else{$('header,.gototop').removeClass('active')}
 
     })
+    // slick.js : history
 
+    $('.history-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 100,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+
+      });
+              
 
 
 
