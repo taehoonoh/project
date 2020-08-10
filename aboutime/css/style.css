@@ -103,7 +103,8 @@ section {
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
+    
 }
 
 ol,
@@ -141,6 +142,7 @@ body{background-image: url("../img/index/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Century Gothic";
+    overflow: hidden;
 }
 
 
@@ -149,9 +151,10 @@ header {
     background: rgba(0,0,0,0.4);
 display: inline-block;
 width:12%;
-text-align: center;
 height: 100vh;
-float: left; 
+text-align: center;
+z-index: 10;
+height: 100vh;
 }
 header .menuall{
     padding-top: 123px;
@@ -163,8 +166,8 @@ header h1{
     font-family: "Century Gothic";
     color: white;
    font-size: 30px;
+   
 }
-
 /* TIME */
 header h1 span{
     font-family: "Brandon Grotesque Bold";
@@ -202,24 +205,24 @@ nav > a{
 }
 
 .navText p{color: white;
-font-size: 0.750em;}
+font-size: 12px;}
 
 /* 메뉴 하단 이미지 */
 .navText img{
     width: 90%;
 }
 
-/* ----------- */
-
 .section{
-    width:80%;
-    padding-top:370px;
-   float: right; 
-   
+    width:87%;
+    float: right;
+    /* border: 1px solid white; */
+    padding-top: 80px;
 }
+
 
 .contents{
     display: flex;
+    padding: 18% 10%;
  
 }
 
@@ -369,7 +372,7 @@ transition: all .5s;}
 .loading img{
     width:100%;
 }
-
+/* 
 @media (min-width: 375px) and (max-width: 767px) {
 
 
@@ -407,4 +410,69 @@ transition: all .5s;}
 
 
 
+} */
+
+/* 미디어쿼리 */
+
+@media (max-width:1600px){
+    .ott {
+        padding: 50px 10% 0;
+    }
+    .thumvideo {
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+    }
+    .pbutton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .popup{
+        width: 1024px; height: 500px;
+        top:10%;
+        left: 20%;}
+        iframe{width: 1024px; height: 500px;}
+
+@media (max-width:1290px){
+
+    
 }
+
+@media (max-width:1024px){
+ 
+    
+
+}
+
+@media (max-width:960px){
+
+}
+
+
+@media (max-width:768px){
+ 
+    
+    
+}
+
+
+
+@media (max-width:600px){
+ 
+    
+   
+}
+
+@media (max-width:480px){
+    
+}
+
+@media (max-width:320px){
+   
+}
+
+
+
+

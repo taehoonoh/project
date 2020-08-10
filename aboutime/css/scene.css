@@ -137,12 +137,7 @@ a {
 }
 
 /* ----------------css reset---------- */
-/* 
-figure img{
-    width: 100%;
-    position: fixed;
-z-index: -1;
-filter: blur(1px);} */
+
 
 body{
     font-family: "Century Gothic";
@@ -394,7 +389,7 @@ display: none;
 .popup figure img{width: 800px;
 height: 533px;}
 
-
+/* 
 @media (min-width: 1281px) {
 
  
@@ -443,4 +438,57 @@ height: 533px;}
         margin-bottom:50px;}
        
 
+    } */
+
+    /* 미디어쿼리 */
+
+@media (max-width:1600px){
+    .ott {
+        padding: 50px 10% 0;
     }
+    .section {
+        padding-top: 0;
+    }
+
+    .title .figImg {
+        width: 1050px;
+    }
+
+}
+@media (max-width:1290px){
+
+    
+}
+
+@media (max-width:1024px){
+ 
+    
+
+}
+
+@media (max-width:960px){
+
+}
+
+
+@media (max-width:768px){
+ 
+    
+    
+}
+
+
+
+@media (max-width:600px){
+ 
+    
+   
+}
+
+@media (max-width:480px){
+    
+}
+
+@media (max-width:320px){
+   
+}

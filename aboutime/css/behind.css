@@ -148,6 +148,7 @@ body{
     background:rgb(46, 46, 46);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 
 }
 
@@ -252,7 +253,7 @@ font-size: 12px;}
 /* 플레이어 */
 
 .content .left{float: left;
-  width: 100px;
+  width: 0;
 color: white;}
 
 .content .left figure{}
@@ -282,8 +283,8 @@ color: white;}
     width: 20%;
     top: 0%;
     right: 8%;
-    height: 100vh;
-    
+
+    margin-top: 10%;
     color: white;
     border: 1px solid black;
     background: rgb(0, 0, 0,0.2);
@@ -309,4 +310,66 @@ font-size: 0.8em;}
 .leImg {
     width:831px;
     height:600px
+}
+
+/* 미디어쿼리 */
+
+@media (max-width:1600px){
+    .ott {
+        padding: 50px 10% 0;
+    }
+    .content {
+        
+        padding-left: 0;
+    }
+    .section {
+    
+        padding-top: 0;
+    }
+    .title {
+  
+        padding-left: 0;
+      
+    }
+    .content .thum {margin-top: 0;
+    right: 2%;}
+    .section {
+        width: 80%;}
+}
+@media (max-width:1290px){
+
+    
+}
+
+@media (max-width:1024px){
+ 
+    
+
+}
+
+@media (max-width:960px){
+
+}
+
+
+@media (max-width:768px){
+ 
+    
+    
+}
+
+
+
+@media (max-width:600px){
+ 
+    
+   
+}
+
+@media (max-width:480px){
+    
+}
+
+@media (max-width:320px){
+   
 }

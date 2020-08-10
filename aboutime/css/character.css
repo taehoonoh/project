@@ -226,7 +226,7 @@ font-size: 12px;}
     width:80%;
     float: right;
     /* border: 1px solid white; */
-  padding-left:150px;
+
   padding-top: 80px;
 }
 
@@ -335,4 +335,53 @@ font-size: 12px;}
 
 .filmo ul li img{
     margin-right: 40px;
+}
+
+/* 미디어쿼리 */
+
+@media (max-width:1600px){
+    .ott {
+        padding: 50px 10% 0;
+    }
+    .section {
+        padding-top: 0;
+    }
+
+}
+@media (max-width:1290px){
+
+    
+}
+
+@media (max-width:1024px){
+ 
+    
+
+}
+
+@media (max-width:960px){
+
+}
+
+
+@media (max-width:768px){
+ 
+    
+    
+}
+
+
+
+@media (max-width:600px){
+ 
+    
+   
+}
+
+@media (max-width:480px){
+    
+}
+
+@media (max-width:320px){
+   
 }

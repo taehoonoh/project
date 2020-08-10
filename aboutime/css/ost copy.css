@@ -343,76 +343,54 @@ width:3%}
   
     }
    
+/* 미디어쿼리 */
 
-    @media (min-width: 375px) and (max-width: 767px) {
-        body{
-            font-family: "Century Gothic";
-            background:rgb(46, 46, 46);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    
-        .title{
-            font-family: "Helvetica75";
-            color: white;
-            padding-top: 5vh;
-            padding-right: 47%;
-            padding-left:110px;
-            animation: smile 3s linear;
-            
-        }
-    
-        .title{
-            font-family: "Helvetica75";
-            color: white;
-            
-        }
-    
-        .title h2{font-size: 40px;
-            margin-bottom:50px;}
-        
- 
-        
-        .songtext{
-            position: relative;
-            width: 50%;
-            height: 900px;
-            white-space: pre;
-            text-align: center;
-            display: none;
-        }
-        .ost .view {
-            width: 372px;
-            height: 372px;
-            overflow: hidden;
-            margin-left: 0;}
-
-
-        .ost .button>p{
-                color: white;
-                font-size: 1.3em;;
-                margin-top: 5vh;
-                
-            }
-
-            .ost .button img:nth-of-type(1){
-                top:76%;
-                left:35%;
-            cursor: pointer;
-            width:20%}
-            
-            .ost .button img:nth-of-type(2){  
-                
-                top:76%;
-                left:38.5%;
-            cursor: pointer;
-            width:30%;}
-            
-            
-            .ost .button img:nth-of-type(3){
-                top:76%;
-                left:46%;
-            cursor: pointer;
-            width:20%}
-    
+@media (max-width:1600px){
+    .ott {
+        padding: 50px 10% 0;
     }
+    .section {
+        padding-top: 0;
+    }
+    .songtext p {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width:1290px){
+
+    
+}
+
+@media (max-width:1024px){
+ 
+    
+
+}
+
+@media (max-width:960px){
+
+}
+
+
+@media (max-width:768px){
+ 
+    
+    
+}
+
+
+
+@media (max-width:600px){
+ 
+    
+   
+}
+
+@media (max-width:480px){
+    
+}
+
+@media (max-width:320px){
+   
+}
