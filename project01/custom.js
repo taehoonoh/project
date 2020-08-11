@@ -31,7 +31,17 @@ $(function(){
 
       });
               
+    //  slick.js : project photo
 
+      $('.project-photo').slick({
+        dots: true,
+        autoplay: true,
+        speed:500,
+        fade:true,
+        infinite: true,
+        autoplaySpeed: 2000,
+        cssEase:'linear'
+      });
 
 
 

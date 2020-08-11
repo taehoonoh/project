@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-
 /* FontAwesome CDN 5.14 */
 @import url('https://use.fontawesome.com/releases/v5.14.0/css/all.css');
 
@@ -15,6 +14,7 @@
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 a {
@@ -120,6 +120,98 @@ header {
     transform: scale(0);
 }
 
+/*  ################### Section : Home ###################*/
+.home-inner {
+    background-color: #fff;
+    height: 100%;
+}
+.home-inner::before{
+    content: "";
+    position: absolute;
+    display: block;
+    background: #000;
+    top:0;left:0;
+    width: 0%;height: 100%;
+    animation: overlay 1s 2s ease-in-out both;
+    /* display: none; */
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Source Sans Pro" sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.2em;
+    margin: 0;
+    animation: slideup 2s linear;
+    animation-fill-mode: both;
+    /* display: none; */
+}
+
+.welcome-text span {
+    font-size: 26px;
+    display: block;
+}
+
+.welcome-text span .fas {
+    color: crimson;
+}
+
+.opacity-image {
+    background: url(images/section-bg-01.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    animation: back 1s 2.5s ease-in-out both;
+
+   
+}
+
+.home-heading {
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left:300px;
+    transform: translateY(-50%);
+    font-size: 100px;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.home-heading span {
+    display: block;
+    overflow: hidden;
+}
+.home-heading span:nth-of-type(1){animation: text .5s 3s ease-in-out both;}
+.home-heading span:nth-of-type(2){animation: text .5s 3.2s ease-in-out both;}
+.home-heading span:nth-of-type(3){animation: text .5s 3.4s ease-in-out both;}
+
+@keyframes slideup{
+    0%{opacity:0;margin-top: 50px;}
+    20%{opacity: 1;margin-top: 0px;}
+    80%{opacity: 1;margin-top: 0px;}
+    100%{opacity: 0; }
+}
+
+@keyframes overlay{
+    0%{width: 0%; left: 0;}
+    50%{width: 100%; left: 0;}
+    100%{width: 0%;left: 100%;}
+}
+@keyframes back{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes text{
+    0%{opacity: 0; width: 0;}
+    100%{opacity: 1; width: 100%;}
+}
 /*  ################### Section : about ###################*/
 .about-inner {
     background: #0dace3 url(images/line-drawing.png) no-repeat right bottom;
@@ -173,6 +265,190 @@ header {
     font-size: 18px;
 }
 
+/* ################# Section : project ##################### */
+.project-inner {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #bbb;
+}
+
+.tabs {
+    height: 100%;
+    width: 300%;
+    transition: 0.5s;
+}
+
+.tab {
+    height: 100%;
+    float: left;
+    width: 33.33333%;
+}
+
+.tab>div {
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.project-info {
+    width: 25%;
+}
+
+.project-photo {
+    width: 75%;
+}
+
+input[name=tabmenu] {
+    display: none;
+}
+
+.btn {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 25%;
+    text-align: center;
+}
+
+.btn label {
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #000;
+    margin: 8px;
+    position: relative;
+
+}
+
+.btn label:before {
+    content: '';
+    display: block;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transition: .3s;
+}
+
+.btn label:hover:before {
+    border: 1px solid #aaa;
+}
+
+input[id=tab1]:checked~.btn label[for=tab1]:before,
+input[id=tab2]:checked~.btn label[for=tab2]:before,
+input[id=tab3]:checked~.btn label[for=tab3]:before {
+    border: 1px solid #aaa;
+}
+
+
+
+input[id=tab1]:checked~.tabs {
+    margin-left: 0;
+}
+
+input[id=tab2]:checked~.tabs {
+    margin-left: -100%;
+}
+
+input[id=tab3]:checked~.tabs {
+    margin-left: -200%;
+}
+
+/* Project info */
+.project-info {
+    padding: 50px;
+    position: relative;
+}
+
+.project-info::before {
+    content: attr(data-text);
+    font-size: 130px;
+    color: #eee;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    opacity: .5;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    position: relative;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.project-info ul {
+    line-height: 2em;
+    margin: 50px 0;
+}
+
+.project-info ul li {}
+
+.project-info ul li::before {
+    content: '\f105';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.detail {
+    margin-bottom: 50px;
+}
+
+.detail div {
+    display: inline-block;
+    text-align: center;
+    width: 32.5%;
+    color: #999;
+}
+
+.detail div span {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.view-project {
+    background: #3f3f3f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 200px;
+    padding: 10px;
+    display: inline-block;
+    transition: .5s;
+    text-align: center;
+
+}
+
+.view-project::after {
+    content: '\f30b';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    transition: .5s;
+    margin-left: 10px;
+
+}
+
+.view-project:hover {
+    background: #242323;
+}
+
+.view-project:hover::after {
+    margin-left: 20px;
+}
+
 /*  ################### Section : plan ###################*/
 .plan-inner {
     background: #1d1b24;
@@ -202,8 +478,7 @@ header {
     padding-right: 50px;
 }
 
-.plan-heading h2
-{
+.plan-heading h2 {
     color: #fff;
     margin: 0;
 }
@@ -228,12 +503,14 @@ header {
     display: inline-block;
     margin: 20px auto;
 }
-.history-info h2{ color: #fff;
-    margin: 0;
-margin-top: 20px;}
-.history-slider {
 
+.history-info h2 {
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
 }
+
+.history-slider {}
 
 .history-slider div h4 {
     color: #fff;
@@ -243,16 +520,25 @@ margin-top: 20px;}
     line-height: 1.5em;
 }
 
-.history-slider div h4 span {color: dodgerblue;}
+.history-slider div h4 span {
+    color: dodgerblue;
+}
 
 .history-slider div p {
     font-size: 16px;
     line-height: 1.5em;
 }
+
 /* Slick.js Custom CSS */
 .slick-prev,
-.history-slider .slick-arrow{display: none !important;}
-.history-slider .slick-dots li button:before{color: white; font-size: 40px;}
+.history-slider .slick-arrow {
+    display: none !important;
+}
+
+.history-slider .slick-dots li button:before {
+    color: white;
+    font-size: 40px;
+}
 
 /*  ################### Section : awards ###################*/
 
