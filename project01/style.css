@@ -278,6 +278,7 @@ header {
     top: 50%;
     left: 100px;
     transform: translateY(-50%);
+    margin-left: 150px;
 }
 
 .item {
