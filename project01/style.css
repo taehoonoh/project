@@ -130,7 +130,6 @@ header {
 .home-inner::before {
     content: "";
     position: absolute;
-    display: block;
     background: #000;
     top: 0;
     left: 0;
@@ -207,17 +206,20 @@ header {
 @keyframes slideup {
     0% {
         opacity: 0;
-        margin-top: 50px;
+        /* margin-top: 50px; */
+        top:70%
     }
 
     20% {
         opacity: 1;
-        margin-top: 0px;
+        /* margin-top: 0px; */
+        top:50%
     }
 
     80% {
         opacity: 1;
-        margin-top: 0px;
+        /* margin-top: 0px; */
+        top:50%
     }
 
     100% {
@@ -679,7 +681,6 @@ hr.bar {
 .location-inner::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.842);
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
