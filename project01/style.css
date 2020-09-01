@@ -814,6 +814,7 @@ hr.bar {
 .send-box input[type=text]:focus,
 .send-box textarea:focus {
     background: #eee;
+    
 }
 
 .send-box button {
@@ -828,6 +829,7 @@ hr.bar {
     transition: 0.5s;
     margin-top: 10px;
     width: 200px;
+    
 }
 
 .send-box button:hover {
