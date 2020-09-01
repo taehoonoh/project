@@ -309,7 +309,8 @@ font-size: 0.8em;}
 
 .leImg {
     width:831px;
-    height:600px
+    height:600px;
+    display: none;
 }
 
 /* 미디어쿼리 */
