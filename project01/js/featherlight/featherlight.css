@@ -43,12 +43,14 @@ html.with-featherlight {
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
+	
+	
 }
 
 .featherlight .featherlight-content {
 	/* make content container for positioned elements (close button) */
 	position: relative;
-
+	
 	/* position: centering vertical and horizontal */
 	text-align: left;
 	vertical-align: middle;
@@ -135,6 +137,8 @@ html.with-featherlight {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	
+	
 }
 
 /* handling phones and small screens */
